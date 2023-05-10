@@ -1,33 +1,28 @@
 <?php
 
-$a = null;
-$b = null;
-$c = null;
+$a=null;
+$b=null;
 if(isset($_GET['a'])){
-    $a = $_GET['a'];
+    $a= $_GET['a'];
 }
 if(isset($_GET['b'])){
-    $b = $_GET['b'];
+    $b= $_GET['b'];
 }
-if(isset($_GET['c'])){
-    $c = $_GET['c'];
-}
-
-$V=$a*$b*$c;
-$S=2*($a*$b+$b*$c+$c*$a)
+$orta_geometrik=sqrt($a*$b);
 
 ?>
 
 <!doctype html>
+<html>
 <head>
     <title>Title</title>
 </head>
 <body>
 
 <form action="" method="GET">
+
     <input type="text" name="a" value="<?php echo $a ?>">
     <input type="text" name="b" value="<?php echo $b ?>">
-    <input type="text" name="c" value="<?php echo $c ?>">
 
     <button type="submit">
         OK
@@ -35,13 +30,10 @@ $S=2*($a*$b+$b*$c+$c*$a)
 
 
 </form>
+<h1>Orta geometrik topish</h1>
+<p> Orta geometrik: <?php {echo $orta_geometrik; }?> </p>
 
-<h1> Hajm va tola sirt</h1>
-<p> Hajmi: <?php {echo $V; }?> </p>
-<p1>Tola sirti: <?php {echo $S; }?> </p1>
 
 
 </body>
 </html>
-
-

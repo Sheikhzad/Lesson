@@ -5,15 +5,9 @@ if(isset($_GET['a'])){
     $a = $_GET['a'];
 }
 
-$sum = 0;
-if($a){
-    $sum = $a * $a * $a;
-}
+$V=pow($a,3);
 
-$sum = 0;
-if($a){
-    $sum = $a +$a + $a + $a +$a + $a;
-}
+$S=6*$a;
 ?>
 
 <!doctype html>
@@ -24,25 +18,21 @@ if($a){
 <body>
 
 <form action="" method="GET">
-    <h1>Yuzini topish</h1>
-    <p1> <?php if($a) {echo $sum; }?> </p1>
-    <label1> V = </label1>
-    <input type="text" name="a" value="<?php echo $a ?>">
+
+        <input type="text" name="a" value="<?php echo $a ?>">
     <button type="submit">
         OK
     </button>
 
-    <h2>Tola sirtini topish</h2>
-    <p2> <?php if($a) {echo $sum; }?> </p2>
-    <label2> S = </label2>
-    <input type="text" name="a" value="<?php echo $a ?>">
 
-    <button type="submit">
-        OK
-    </button>
 
 
 </form>
+
+<h1>Hajm va tola sirt</h1>
+<p1> Hajm: <?php {echo $V; }?> </p1>
+<br>
+<p2>Tola sirti: <?php {echo $S; } ?> </p2>
 
 
 </body>

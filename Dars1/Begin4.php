@@ -6,11 +6,7 @@ if(isset($_GET['d'])){
     $d = $_GET['d'];
 }
 
-$sum = 0;
-
-if($d){
-    $sum = $d * $P;
-}
+ $L=$d*$P
 ?>
 
 <!doctype html>
@@ -21,8 +17,7 @@ if($d){
 <body>
 
 <form action="" method="GET">
-    <h1>Perimetrini topish</h1>
-    <p> <?php if($d) {echo $sum; }?> </p>
+
     <label> L = </label>
     <input type="text" name="d" value="<?php echo $d ?>">
 
@@ -32,6 +27,8 @@ if($d){
 
 
 </form>
+<h1>Uzunlik topish</h1>
+<p> <?php {echo $L; }?> </p>
 
 
 </body>

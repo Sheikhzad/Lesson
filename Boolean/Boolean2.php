@@ -1,16 +1,16 @@
 <?php
 $a = isset($_POST['a']) ? $_POST ['a'] : null;
-if ($a>0){
-    echo "a soni musbat";
-
-}elseif($a<0){
-    echo "a soni musbat emas";
+if ($a%2!=0){
+    echo "a soni toq";
+}
+else{
+    echo "a soni juft";
 }
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Boolean1</title>
+    <title>Boolean2-3</title>
 </head>
 <body>
 <form action="" method="POST">

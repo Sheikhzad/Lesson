@@ -1,16 +1,15 @@
 <?php
-$a = isset($_POST['a']) ? $_POST ['a'] : null;
-if ($a>0){
-    echo "a soni musbat";
-
-}elseif($a<0){
-    echo "a soni musbat emas";
+$a = isset($_POST['a']) ? $_POST['a'] : null;
+if ( $a%2 != 0 && $a>100 && $a<1000){
+    echo "Berilgan son toq son";
+} else {
+    "false";
 }
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Boolean1</title>
+    <title>Boolean16</title>
 </head>
 <body>
 <form action="" method="POST">
